@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<form name="form" action="#">
+			<div class="name">
+				<label for="name">Имя</label>
+				<input pattern="^[А-Яа-яA-Za-z]+$" required placeholder="Bruce Rayes" id="name" name="name" type="text">
+			</div>
+			<div class="age">
+				<label for="age">Возраст</label>
+				<input required placeholder="24" id="age" name="age" type="number">
+			</div>
+			<button type="submit">Добавить</button>
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>Имя студента</th>
+					<th>Год рождения</th>
+					<th>Действия</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+
+	<div class="modal-bg">
+		<div class="modal">
+			<form name="change" action="#">
+				<h3>Change value</h3>
+				Name<input class="name" type="text" placeholder="change name">
+				Age<input class="age" type="number" placeholder="change age">
+				<div class="btn">
+					<button type="submit" class="save">Save</button>
+					<button type="reset" class="close">Cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
